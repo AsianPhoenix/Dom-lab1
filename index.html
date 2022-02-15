@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dom Mini Challenges</title>
+  </head>
+  <body>
+    <header>
+      <h1>DOM Mini Challenges</h1>
+    </header>
+    <main>
+      <div class="one">
+        <p class="total">Total: $0.00</p>
+        <button class="snack-button cola" data-cost="2">Lime Cola $2.00</button>
+        <button class="snack-button peanuts" data-cost="3">
+          Salted Peanuts $3.00
+        </button>
+        <button class="snack-button chocolate" data-cost="4">
+          Chocolate Bar $4.00
+        </button>
+        <button class="snack-button fruit" data-cost="6">
+          Fruit Gummies $6.00
+        </button>
+      </div>
+      <div class="two">
+        <form>
+          <label for="howMany">How many?</label>
+          <input type="text" name="howMany" id="howMany" required />
+          <label for="whichCoin">Which coin?</label>
+          <select name="whichCoin" id="whichCoin">
+            <option class="coinOpt" value="penny" data-value="0.01">
+              Penny
+            </option>
+            <option class="coinOpt" value="nickel" data-value="0.05">
+              Nickel
+            </option>
+            <option class="coinOpt" value="dime" data-value="0.10">Dime</option>
+            <option class="coinOpt" value="quarter" data-value="0.25">
+              Quarter
+            </option>
+          </select>
+          <button>Make Money!</button>
+          <div class="bank"></div>
+        </form>
+        <div class="three">
+          <p>Light Bulb</p>
+          <button class="button-lightOn">On</button>
+          <button class="button-lightOff">Off</button>
+          <button class="button-lightToggle">Toggle</button>
+          <button class="button-lightEnd">End</button>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
